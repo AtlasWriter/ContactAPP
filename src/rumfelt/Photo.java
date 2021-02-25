@@ -1,6 +1,6 @@
 package rumfelt;
 
-public class Photo {
+public class Photo extends AddressBook{
 	
 	private String photoName;
 	private int date;

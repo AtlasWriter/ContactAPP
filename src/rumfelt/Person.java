@@ -6,16 +6,19 @@ public class Person extends BaseContact {
 	private int age;
 	private String maritalStatus;
 	private int numberInHousehold;
-	
+	private Photo photo;
 
 	public Person(String name, String description, int phone, String hobby, int age, String maritalStatus,
-			int numberInHousehold) {
+			int numberInHousehold, Photo p) {
 		super(name, description, phone);
+		
 		this.hobby = hobby;
 		this.age = age;
 		this.maritalStatus = maritalStatus;
 		this.numberInHousehold = numberInHousehold;
+		this.photo = p;
 	}
+
 
 
 
@@ -72,6 +75,20 @@ public class Person extends BaseContact {
 		return "Person [getHobby()=" + getHobby() + ", getAge()=" + getAge() + ", getMaritalStatus()="
 				+ getMaritalStatus() + ", getNumberInHousehold()=" + getNumberInHousehold() + ", getName()=" + getName()
 				+ ", getDescription()=" + getDescription() + ", getPhone()=" + getPhone() + "]";
+	}
+
+
+
+
+	public Photo getPhoto() {
+		return photo;
+	}
+
+
+
+
+	public void setPhoto(Photo photo) {
+		this.photo = photo;
 	}
 
 	

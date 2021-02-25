@@ -5,15 +5,26 @@ public class BusinessContact extends BaseContact{
 	private int hours;
 	private String url;
 	private int years;
-	
+	private Location location;
 	
 
 
-	public BusinessContact(String name, String description, int phone, int hours, String url, int years) {
+	public BusinessContact(String name, String description, int phone, int hours, String url, int years, Location l) {
 		super(name, description, phone);
 		this.hours = hours;
 		this.url = url;
 		this.years = years;
+		this.location = l;
+	}
+
+
+	public Location getLocation() {
+		return location;
+	}
+
+
+	public void setLocation(Location location) {
+		this.location = location;
 	}
 
 
