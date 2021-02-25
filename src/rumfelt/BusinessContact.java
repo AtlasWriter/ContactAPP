@@ -1,6 +1,8 @@
 package rumfelt;
 
-public class BusinessContact extends BaseContact{
+import java.io.Serializable;
+
+public class BusinessContact extends BaseContact implements Serializable {
 	
 	private int hours;
 	private String url;

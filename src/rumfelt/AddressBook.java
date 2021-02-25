@@ -13,9 +13,12 @@ public class AddressBook {
 	
 	
 	public void start() {
-		DataAccessService p = new DataAccessService();
-		contacts.addAll(p.manualPersonalEntry());
-		contacts.addAll(p.manualBusinessEntry());
+		
+		contacts = DataServices.read();
+		
+//		DataAccessService p = new DataAccessService();
+//		contacts.addAll(p.manualPersonalEntry());
+//		contacts.addAll(p.manualBusinessEntry());
 		menu();
 		
 	}
@@ -82,6 +85,8 @@ public class AddressBook {
 			break;
 		case 10:
 			System.out.println("10) Exit");
+			DataServices.write(contacts);
+			System.exit(0);
 			break;
 		default:
 			return;

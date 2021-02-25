@@ -1,6 +1,9 @@
 package rumfelt;
 
-public class Location {
+import java.io.Serializable;
+
+public class Location implements Serializable{
+	
 	private String street;
 	private int number;
 	private String state;

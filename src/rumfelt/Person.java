@@ -1,6 +1,8 @@
 package rumfelt;
 
-public class Person extends BaseContact {
+import java.io.Serializable;
+
+public class Person extends BaseContact implements Serializable {
 	
 	private String hobby;
 	private int age;

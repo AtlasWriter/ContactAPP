@@ -1,6 +1,8 @@
 package rumfelt;
 
-public class Photo extends AddressBook{
+import java.io.Serializable;
+
+public class Photo extends AddressBook implements Serializable{
 	
 	private String photoName;
 	private int date;

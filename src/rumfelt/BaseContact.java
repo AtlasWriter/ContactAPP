@@ -1,6 +1,8 @@
 package rumfelt;
 
-public class BaseContact {
+import java.io.Serializable;
+
+public class BaseContact implements Serializable {
 	
 	private String name;
 	private String description;
